@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --color1:#FFF;
+    --color2:#181818;
+  }
+  .nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-image: linear-gradient(to bottom, #8f8357 10%, #2d2d60 100%);
+    padding: 12px 20px;
+  }
+  .logo img{
+    width: 40px;
+  }
+  .logo h1 {
+    font-size: 8px;
+    text-decoration: none;
+    text-align: center;
+   
+  }
+  .menu{
+    display: flex;
+  }
+  
+  .logo h1 a{
+      color: #dcd065;
+      text-decoration: none;
+      text-align: center;
+    
+  }
+  .menu li{
+    padding-left: 30px;
+  }
+  .menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color1);
+    transition: .15s ease-in-out;
+    left: 0;
+  }
+  .menu li a:hover::after{
+    width: 100%;
+  }
+  
+  @media (max-width:720px) {
+    .nav-bar{
+      display: block;
+    }
+    .logo img{
+      width: 50px;
+      margin-left: 18rem;
+    }
+    .logo h1{
+      font-size: 1.5rem;
+    }
+    .menu{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:500px) {
+    .logo img{
+      width: 50px;
+      margin-left: 12.7rem;
+    }
+    .logo h1{
+      font-size: 1rem;
+    }
+    .menu{
+      font-size: 10px;
+    }
+  }
+  @media (max-width:350px) {
+    .logo img{
+      width: 40px;
+      margin-left: 8rem;
+    }
+    .logo h1{
+      font-size: 0.8rem;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+      font-size: 8px;
+    }
+    .menu-item{
+      padding-top: 4px;
+    }
+  }
+  @media (max-width:270px) {
+    .logo img{
+      width: 40px;
+      margin-left: 5.6rem;
+    }
+  }
+  /*ul li ul .dropdown li{
+    display: block;
+  } 
+  ul li ul.dropdown{
+    width: 10%;
+    background: var(--color2);
+    z-index: 999;
+    position: absolute;
+    display: none;
+  }
+  ul li a:hover{
+    background: var(--color2);
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }*/
+  .open-menu ,.close-menu{
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+  }
+  .open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .close-menu{
+    top: 20px;
+    right: 20px;
+  }
+  #check{
+    display: none;
+  }
+
+  div {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: oblique;
+  }
+
+  main {
+    padding: 1rem;
+}
+
+#question-form, #questions {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#questions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.question-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.question-item h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.reply-form {
+    margin-top: 1rem;
+}
+
+.reply-form input, .reply-form textarea {
+    width: calc(100% - 20px); /* Adjust to fit within padding */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reply-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-form button:hover {
+    background-color: #45a049;
+}
+
+.reply-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.reply-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #e9e9e9;
+}

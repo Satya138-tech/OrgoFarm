@@ -1,0 +1,63 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog_style.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul class="nav-bar">
+            <li class="logo"><a href="first.html"><img src="Green Modern Farm Logo (6).png" alt="logo"></a>
+            <h1><a href="#">ORGOFARM</a></h1></li>
+            <!-- <input type="checkbox" id="check"> -->
+            <span class="menu">
+              <li><a href="first.html" class="menu-item">Home</a></li>
+              <li><a href="#" class="menu-item">Browse Product</a></li>
+              <li><a href="#" class="menu-item">Loan Services</a></li>
+              <li><a href="#" class="menu-item">News & Updates</a></li>
+              <li><a href="#" class="menu-item">Dashboard</a></li>
+              <li><a href="login.html" class="menu-item">Login</a>
+             <!-- <ul class="dropdown">
+                <li><a href="#">Login as a Farmer</a></li>
+                <li><a href="#">Login as a Buyer</a></li>
+              </ul>-->
+              </li>
+              <label for="check" class="close-menu"><i class='bx bx-x'></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class='bx bx-menu'></i></label>
+          </ul>
+        </nav>
+      </header>
+      <div>
+      HERE YOU CAN SHARE PROBLEM RELATED TO ORGANIC FARMING AND GET SOLUTION ALL OVER WORLD 
+      </div>
+      
+
+      <main>
+        <section id="question-form">
+            <h2>Ask a Question</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                
+                <label for="question">Question:</label>
+                <textarea id="question" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="questions">
+            <h2>Questions</h2>
+            <ul id="question-list"></ul>
+        </section>
+    </main>
+    <script src="blog_script.js"></script>
+  </body>
+  </html>

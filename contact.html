@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img src="Green Modern Farm Logo (6).png" alt="logo">
+         
+    </header>
+    <h1>Contact Us</h1>
+
+    <main>
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>If you have any questions, feel free to reach out to us using the following contact details:</p>
+            <ul>
+                <li><strong>Address:</strong> 1234 Bata ,NIT faridabad, haryana </li>
+                <li><strong>Phone: </strong> <a href="tel:+9318432741"target=blank> 93xxxxxxxx  call us</a></li>
+                <li><strong>Email:</strong> <a href="mailto:orgofarm4@gmail.com">orgofarm4@gmail.com</a></li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formMessage" class="hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Orgofarm. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
